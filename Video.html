@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Pictures </title>
+
+    <style>
+
+    .Video{
+        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+        gap: 10rem;
+        margin-top: 5rem;
+        text-emphasis-color: Blue;
+    }
+
+     .Video video{
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+        position: center;
+        border-radius: 1rem;
+        box-shadow: 0 0 25px blue;
+        transition: 0.3s ease;
+        margin-top: 10rem;
+        margin-left: 50rem;
+    }
+
+    h1{
+    text-transform:uppercase ;
+    color:#fff;
+    font-size: 5em;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+}
+    </style>
+
+</head>
+<body>
+    <h1><center>My Video Diary</center></h1>
+    <header>
+        <a href="#" class="logo">My Library</a>
+
+        <nav>
+            <a href="index.html" class="active"> Home</a>
+            <!-- <a href="CollegeDay.html" >College Day</a> -->
+            <a href="Picture.html" link="Picture" >College Day</a>
+            <a href="Video.html" >Video</a>
+        </nav>
+    </header>
+    <div class="Video">
+        <div>
+            <video width="320" height="240" controls>
+            <source src="c:\Users\benle\Downloads\464324227_8960923103974736_2791321503478855525_n.mp4" type="video/mp4">
+            </video> 
+        </div>
+        <div >
+            <video width="320" height="240" controls>
+                <source src="c:\Users\benle\Downloads\464292548_27853954684195850_7466204592663598869_n.mp4" type="video/mp4">
+                </video> 
+        </div>
+        <div>
+        <video width="320" height="240" controls>
+            <source src="c:\Users\benle\Downloads\464454672_8526012450778190_2151135972372291253_n.mp4" type="video/mp4">
+        </video> 
+        </div>
+    </div>
+</body>
+
+</html>

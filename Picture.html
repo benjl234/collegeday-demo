@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Interactive Image Gallery with Hover Effects</title>
+        <link rel="stylesheet" href="">
+    </head>
+
+
+    <style>
+        @import url('https://fonts.goggleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 50;
+    margin: 100;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: grid;
+    height: 100;
+    place-items: center;
+    font-family: "Geng geng", sans serif; 
+}
+
+.wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 10;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.wrapper>div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out ;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper>div:nth-of-type(1) {
+    background: url("Foundation image/image_6209779 (2).JPG") no-repeat 50%/
+    cover;
+}
+
+.wrapper>div:nth-of-type(2) {
+    background: url("Foundation image/image_123650291 (1).JPG") no-repeat 50%/
+    cover;
+}
+
+.wrapper>div:nth-of-type(3) {
+    background: url("Foundation image/image_123650291.JPG") no-repeat 50%/
+    cover;
+}
+.wrapper>div:nth-of-type(4) {
+    background: url("Foundation image/461526073_122145158180283399_4731143566795005921_n.jpg") no-repeat 50%/
+    cover;
+}
+.wrapper>div:nth-of-type(5) {
+    background: url("Foundation image/461512085_122145158426283399_1254703536441699726_n.jpg") no-repeat 50%/
+    cover;
+}
+
+.wrapper>div.content{
+    font-size: 1.5rem;
+    color:chartreuse;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    height: 100px;
+    opacity: 0 ;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(2, 2, 46, 0.67) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translate(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden; 
+}
+.wrapper>div.content.span{
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+
+}
+
+.wrapper>div:hover{
+    flex: 0 0 250px;
+    transform: translateY(-30px);
+
+}
+
+.wrapper>div:hover .content {
+    opacity: 1;
+    transform: translate(0%);
+    visibility: visible;
+
+}
+
+h1{
+    text-transform:uppercase ;
+    color:#fff;
+    font-size: 5em;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+}
+
+h2{
+    text-transform:uppercase ;
+    color:#fff;
+    font-size: 1em;
+    letter-spacing: 0px;
+    text-shadow: 0 0 0px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+}
+    </style>
+    <body background="Foundation image/461512085_122145158426283399_1254703536441699726_n.jpg">
+            <h1>MY Diary Picture </h1>
+       
+        <div class="wrapper">
+            <div>
+                <div class="content">
+                    <h2> <Center><i>MORNING ACTIVITY</i></Center></h2>
+                 
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h2> <Center><i>AFTERNOON ACTIVITY</i></Center></h2>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h2> <Center><i>LAST PIC FOR LAPARO</i></Center></h2>
+                   
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h2> <Center><i>LAPAROZA</i></Center></h2>
+                   
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h2> <Center><i>LAPAROZA</i></Center></h2>
+                   
+                </div>
+            </div>
+           
+        </div>
+
+    </body>
+</html>
